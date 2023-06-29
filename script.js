@@ -13,14 +13,22 @@ function writePassword() {
 
 }
 
-function generatePassword() 
-{
-var pwlength = prompt("Please provide disired password length:");
-alert("You selected"+ pwlength +"characters.");
-if(pwlength < 8 || 8> pwlength) {
-alert(ALERT:);
+function generatePassword() {
+
+  var pwlength = prompt("Please provide disired password length:");
+
+alert("You selected "+ pwlength +" characters.");
+
+if(pwlength >= 8 && pwlength <= 128 ){
+
+confirm (pwlength +" will be your length!!");
+} else {
+
+  alert("ALERT! MUST BE BETWEEN 8-128 CHARACTERS!!!");
+  
 }
-}
+} 
+
 
 
 
