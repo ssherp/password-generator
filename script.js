@@ -1,7 +1,8 @@
 // Assignment code here
 var randomNum = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
-var randomUpper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Z","Y","Z"]
+var randomUpper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Z","Y","Z"];
 var randomSpec=['!','@','#','$','%','^','&','*','-','=','+','"',',',"'"];
+var randomLower
 var allCharater=[]
 
 // Get references to the #generate element
@@ -57,10 +58,22 @@ function generatePassword() {
     allCharater=allCharater.concat(randomSpec)
 
   }
+  pwlength
+
+  for (allCharater
+
 }
 
 
 
+// const array = ['1', '2', 'a', 'b', 'A', 'B', '%']
+// let password;
+// // let randomIndex = 
+// password = array[1]
+// password = password + array[4]
+// password = password + array[0]
+
+// // password
 
 
 
