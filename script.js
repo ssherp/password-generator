@@ -13,5 +13,24 @@ function writePassword() {
 
 }
 
+function generatePassword() 
+{
+var pwlength = prompt("Please provide disired password length:");
+alert("You selected"+ pwlength +"characters.");
+if(pwlength < 8 || 8> pwlength) {
+alert(ALERT:);
+}
+}
+
+
+
+
+
+
+
+
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
