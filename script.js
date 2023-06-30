@@ -3,7 +3,7 @@ var randomNum = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
 var randomUpper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var randomSpec=['!','@','#','$','%','^','&','*','-','=','+','"',',',"'"];
 var randomLower=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-var characterSet=[]
+var characterSet=[];
 
 // Get references to the #generate element
 
@@ -15,12 +15,12 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-  //spread oprater//
+
 }
 
 function generatePassword() {
 
-  var pwlength = parseInt(prompt("Please provide disired password length:", "number from 1-128"));
+  var pwlength = parseInt(prompt("Please provide disired password length:", "number from 8-128"));
 
   if (pwlength >= 8 && pwlength <= 128) { 
     
@@ -32,7 +32,9 @@ function generatePassword() {
   } 
   
   var numType = confirm("would you like numbers?");
-
+  
+  var password='';
+  
   if (numType){
 
     characterSet=characterSet.concat(randomNum)
@@ -70,7 +72,10 @@ function generatePassword() {
 
   password += characterSet[randomIndex];
   }
+
 return password; 
+
+
 
 }
   
