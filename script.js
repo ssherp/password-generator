@@ -19,6 +19,9 @@ function writePassword() {
 }
 
 function generatePassword() {
+  //clear both password and characterSet arrays
+  var password = "";
+  characterSet = [];
 //add prompt for pwlength
   var pwlength = parseInt(prompt("Please provide disired password length:", "number from 8-128"));
 //make a if else statement
@@ -32,34 +35,29 @@ function generatePassword() {
   } 
   //add number y/n
   var numType = confirm("would you like numbers?");
-  //empty arry from last generated password
-  var password='';
-  
+//empty arry from last generated password
   if (numType){
 //moved randomNum to characterSet
-    characterSet=characterSet.concat(randomNum)
-
+    characterSet=characterSet.concat(randomNum);
   }
   var upperType = confirm("would you like upper case letters?");
   
   if (upperType){
 //move randomupper to characterSet
-    characterSet=characterSet.concat(randomUpper)
-
+    characterSet=characterSet.concat(randomUpper);
   }
   var lowerType = confirm("would you like lower case letter?");
   if (lowerType){
 
-    characterSet=characterSet.concat(randomLower)
-
+    characterSet=characterSet.concat(randomLower);
+// confirm special character
   }
   var specType = confirm("would you like special characters?");
 
   if (specType){
 
     characterSet=characterSet.concat(randomSpec);
-
-  }
+   }
   if (characterSet.length===0) {
 
     alert("You must select at least one character type!");
@@ -72,7 +70,7 @@ function generatePassword() {
 
   password += characterSet[randomIndex];
   }
-
+debugger
 return password; 
 
 

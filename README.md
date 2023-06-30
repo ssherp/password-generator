@@ -4,8 +4,8 @@
 
 | Technology Used         | Resource URL           | 
 | ------------- |:-------------:| 
-| HTML    | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) | 
-| CSS     | [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)      |   
+| JAVASCRIPT    | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://www.w3schools.com/js/js_random.asp) | 
+| JavaSCRIPT    | [https://developer.mozilla.org/en-US/docs/Web/CSS](https://stackoverflow.com/questions/37039657/)|   
 | Git | [https://git-scm.com/](https://git-scm.com/)     |    
 
 ## Description 
