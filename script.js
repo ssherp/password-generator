@@ -1,9 +1,9 @@
 // Assignment code here
 var randomNum = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
-var randomUpper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Z","Y","Z"];
+var randomUpper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var randomSpec=['!','@','#','$','%','^','&','*','-','=','+','"',',',"'"];
-var randomLower
-var allCharater=[]
+var randomLower=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+var characterSet=[]
 
 // Get references to the #generate element
 
@@ -35,34 +35,51 @@ function generatePassword() {
 
   if (numType){
 
-    allCharater=allCharater.concat(randomNum)
+    characterSet=characterSet.concat(randomNum)
 
   }
   var upperType = confirm("would you like upper case letters?");
   
   if (upperType){
 
-    allCharater=allCharater.concat(randomUpper)
+    characterSet=characterSet.concat(randomUpper)
 
   }
   var lowerType = confirm("would you like lower case letter?");
   if (lowerType){
 
-    allCharater=allCharater.concat(randomLower)
+    characterSet=characterSet.concat(randomLower)
 
   }
   var specType = confirm("would you like special characters?");
 
   if (specType){
 
-    allCharater=allCharater.concat(randomSpec)
+    characterSet=characterSet.concat(randomSpec);
 
   }
-  pwlength
+  if (characterSet.length===0) {
 
-  for (allCharater
+    alert("You must select at least one character type!");
+    return;
+  }
+  
+ for (var i = 0; i < pwlength; i++) {
 
-}
+  }
+
+
+
+
+
+//  return characterSet=Math.floor(Math.random()*characterSet.pwlength);
+// randomOutput=characterSet[Math.floor(Math.random()*characterSet.pwlength)]; 
+
+  }
+    
+   
+  
+  
 
 
 
