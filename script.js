@@ -66,40 +66,13 @@ function generatePassword() {
   
  for (var i = 0; i < pwlength; i++) {
 
+  var randomIndex = Math.floor(Math.random()*characterSet.length);
+
+  password += characterSet[randomIndex];
   }
+return password; 
 
-
-
-
-
-//  return characterSet=Math.floor(Math.random()*characterSet.pwlength);
-// randomOutput=characterSet[Math.floor(Math.random()*characterSet.pwlength)]; 
-
-  }
-    
-   
+}
   
-  
-
-
-
-// const array = ['1', '2', 'a', 'b', 'A', 'B', '%']
-// let password;
-// // let randomIndex = 
-// password = array[1]
-// password = password + array[4]
-// password = password + array[0]
-
-// // password
-
-
-
-
-
-
-
-
-
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
