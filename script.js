@@ -1,7 +1,7 @@
 // Assignment code here
 var randomNum = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
 var randomUpper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-var randomSpec=['!','@','#','$','%','^','&','*','-','=','+','"',',',"'"];
+var randomSpec=['!','@','#','$','%','^','&','*','-','=','+','"',',',"'",'(',')','.','/',':',';','<',','>'','[',']','_','`','{','{','}','~'];
 var randomLower=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 var characterSet=[];
 
@@ -19,24 +19,24 @@ function writePassword() {
 }
 
 function generatePassword() {
-
+//add prompt for pwlength
   var pwlength = parseInt(prompt("Please provide disired password length:", "number from 8-128"));
-
+//make a if else statement
   if (pwlength >= 8 && pwlength <= 128) { 
-    
+   //make a alert with pwlength 
   alert("You selected "+ pwlength +" as your length.");  
-  
+  //else alert if number is less then 8 or greater then 128
   }else {
-    alert("ALERT! MUST BE BETWEEN 8-128 CHARACTERS!!!");
+    alert("ALERT! LENGTH MUST BE BETWEEN 8-128 CHARACTERS!!!");
     return;
   } 
-  
+  //add number y/n
   var numType = confirm("would you like numbers?");
-  
+  //empty arry
   var password='';
   
   if (numType){
-
+//moved randomNum to characterSet
     characterSet=characterSet.concat(randomNum)
 
   }
