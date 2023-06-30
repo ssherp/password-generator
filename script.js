@@ -32,7 +32,7 @@ function generatePassword() {
   } 
   //add number y/n
   var numType = confirm("would you like numbers?");
-  //empty arry
+  //empty arry from last generated password
   var password='';
   
   if (numType){
@@ -43,7 +43,7 @@ function generatePassword() {
   var upperType = confirm("would you like upper case letters?");
   
   if (upperType){
-
+//move randomupper to characterSet
     characterSet=characterSet.concat(randomUpper)
 
   }
@@ -65,7 +65,7 @@ function generatePassword() {
     alert("You must select at least one character type!");
     return;
   }
-  
+  //Math.floor and random for statement
  for (var i = 0; i < pwlength; i++) {
 
   var randomIndex = Math.floor(Math.random()*characterSet.length);
