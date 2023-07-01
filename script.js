@@ -70,7 +70,7 @@ function generatePassword() {
 
   password += characterSet[randomIndex];
   }
-debugger
+// debugger helped me debugger y code didnt work
 return password; 
 
 
