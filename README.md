@@ -28,7 +28,7 @@ Randomness: I explored techniques to generate random passwords that are not pred
 
 Usability: While focusing on security, I also learned the significance of password usability. I discovered ways to strike a balance between generating secure passwords and ensuring they are easy to remember for the users. Techniques such as mnemonic phrases or passphrases can enhance both security and usability.
 
-### Sonam SHerpa 
+### Sonam Sherpa 
 
 * [Portfolio](https://ssherp.github.io/portfolio/)
 * [LinkedIn](https://www.linkedin.com/in/sonam-sherpa-306559280)
